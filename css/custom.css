@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Tanha;
+    src: url("../font/tanha-font-v0.9/Tanha.eot") format("eot");
+    src: url("../font/tanha-font-v0.9/Tanha.ttf") format("ttf"), url("../font/tanha-font-v0.9/Tanha.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Londrina;
+    src: url('../font/LondrinaShadow-Regular.ttf');
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+}
+
+*:focus {
+    outline: 0;
+}
+
+::selection {
+    background: #c03a2b;
+    color: white;
+}
+
+::-moz-selection {
+    background: #c0392b;
+    color: white;
+}
+
+#body {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s linear;
+}
+
+div.colors {
+    padding: 5px;
+    border-radius: 0 0 3px 0;
+    position: absolute;
+    top: 20%;
+    left: -110px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .6s linear;
+}
+
+.setting {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 5px 10px;
+    border-radius: 0 3px 3px 0;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: -31px;
+}
+
+.setting>i {
+    transition: all 0.6s;
+}
+
+.setting>i:hover {
+    transform: rotate(360deg);
+}
+
+div.colors>.item>ul {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+div.colors>.item>ul>li {
+    border-radius: 2px;
+    margin: 5px 0;
+    list-style: none;
+    border: 1px solid white;
+    flex-basis: 25px;
+    height: 25px;
+}
+
+div.colors>.item>ul>li:nth-child(1) {
+    background-color: #2a1645;
+}
+
+div.colors>.item>ul>li:nth-child(2) {
+    background-color: #ee3d97;
+}
+
+div.colors>.item>ul>li:nth-child(3) {
+    background-color: #ede856;
+}
+
+div.colors>.item>ul>li:nth-child(4) {
+    background-color: #00a5d3;
+}
+
+div.colors>.item>ul>li:nth-child(5) {
+    background-color: transparent;
+}
+
+div.colors>.item>ul>li:nth-child(6) {
+    background-color: transparent;
+}
+
+div.colors>.item>ul>li:nth-child(7) {
+    background-color: transparent;
+}
+
+div.colors>.item>ul>li:nth-child(8) {
+    background-color: transparent;
+}
+
+div.colors>.item>ul>li:nth-child(9) {
+    background-color: transparent;
+}
+
+.checkbox {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.checkbox>span {
+    text-transform: capitalize;
+    font-size: 13px;
+    font-family: "Josefin Sans";
+}
+
+.theme>div>i {
+    transition: all 0.6s;
+}
+
+.theme>div>p {
+    font-family: "Josefin Sans";
+}
+
+.theme>ul {
+    display: none;
+    transition: all 0.6s;
+}
+
+.theme>ul>li>span {
+    font-family: "Josefin Sans";
+}
+
+.search {
+    color: black;
+    user-select: none;
+    cursor: context-menu;
+    font-family: Londrina;
+    letter-spacing: 5px;
+    font-size: 70px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.911);
+    margin-top: 80px;
+    transition: all 0.7s;
+}
+
+.search:hover {
+    letter-spacing: 10px;
+}
+
+.timeDate {
+    padding: 15px 35px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.842);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    cursor: none;
+    transition: all 0.6s ease-in-out;
+}
+
+.timeDate:hover {
+    letter-spacing: 3px;
+    color: white;
+}
+
+.time>span {
+    font-family: Tanha;
+}
+
+#date {
+    font-family: Tanha;
+    direction: rtl;
+}
+
+.div-search {
+    width: 35%;
+    height: 43px;
+    padding: 0 13px 0 20px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#input {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.897);
+    width: 85%;
+    padding: 10px 0;
+    font-size: 17px;
+    border: none;
+    font-family: "Josefin Sans", Tanha;
+}
+
+#input::placeholder {
+    color: #7f8c8d;
+}
+
+.se {
+    color: #7f8c8d;
+    margin-right: 15px;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35px;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.li:hover {
+    color: white;
+}
+
+.image {
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+#sec>div {
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 2px #34495e;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 85px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.6s;
+}
+
+div:hover p {
+    color: white;
+    text-shadow: 0 0 5px yellow;
+}
+
+div:hover img {
+    transform: scale(1.5, 1.5);
+}
+
+div>img {
+    transform-origin: center;
+    transition: 0.4s;
+}
+
+div>p {
+    transition: background-color .6s;
+}
+
+.google>img {
+    width: 45px;
+    height: 45px;
+}
+
+.bing>img {
+    width: 45px;
+    height: 45px;
+}
+
+.duckduckgo>img {
+    width: 50px;
+    height: 50px;
+}
+
+.toplearn>img {
+    width: 50px;
+}
+
+.faradars {
+    margin-top: -4px;
+}
+
+.faradars>img {
+    width: 60px;
+    height: 65px;
+}
+
+.faradars>p {
+    margin-top: -10px;
+}
+
+.box {
+    width: 80px !important;
+    height: 80px !important;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+}

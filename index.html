@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+        rel="stylesheet" />
+    <link rel="icon" href="image/icon.ico">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="body">
+    <div class="colors" id="colors">
+        <div class="setting" onclick="setting()">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="item">
+            <ul>
+                <li onclick="bgcolor('0')"></li>
+                <li onclick="bgcolor('1')"></li>
+                <li onclick="bgcolor('2')"></li>
+                <li onclick="bgcolor('3')"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="timeDate" id="timeDate">
+        <div class="time" id="time">
+            <span id="hour"></span><span> : </span><span id="minute"></span>
+        </div>
+        <div id="date"></div>
+    </div>
+    <h1 class="search" id="search">Search</h1>
+    <div class="div-search" id="div-search">
+        <i class="se fas fa-search"></i>
+        <input id="input" type="text" placeholder="Search or type a URL">
+        <i class="li fas fa-link" onclick="url()"></i>
+    </div>
+
+    <section id="sec">
+        <div class="google box" id="google" onclick="Search('google')" tabindex="4">
+            <img class="image" src="image/google.png">
+            <p>Google</p>
+        </div>
+        <div class="bing box" id="bing" onclick="Search('bing')" tabindex="0">
+            <img class="image" src="image/bing.png">
+            <p>Bing</p>
+        </div>
+        <div class="duckduckgo box" id="duckduckgo" onclick="Search('duckduckgo')" tabindex="1">
+            <img class="image" src="image/DuckDuckGo_Duck.png">
+            <p>DuckDuck GO</p>
+        </div>
+        <div class="toplearn box" id="toplearn" onclick="Search('toplearn')" tabindex="2">
+            <img class="image" src="image/download.svg">
+            <p>TopLearn</p>
+        </div>
+        <div class="faradars box" id="faradars" onclick="Search('faradars')" tabindex="3">
+            <img class="image" src="image/faradars.png">
+            <p>FaraDars</p>
+        </div>
+    </section>
+</body>
+<script src="js/Date.js"></script>
+<script src="js/custom.js"></script>
+
+</html>
