@@ -1,5 +1,6 @@
 var random = Math.floor(Math.random() * 4);
-document.body.style.backgroundImage = "url('../image/" + random + ".jpg')";
+document.body.style.backgroundImage = "url('image/" + random + ".jpg')";
+console.log("url('image/" + random + ".jpg')");
 var d = new Date();
 var check = true;
 var XCheckBox = true;
@@ -91,7 +92,7 @@ function url() {
 }
 
 function bgcolor(color) {
-    document.body.style.backgroundImage = "url('../image/" + color + ".jpg')";
+    document.body.style.backgroundImage = "url('image/" + color + ".jpg')";
 }
 
 function setting() {
