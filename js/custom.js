@@ -55,7 +55,7 @@ function Search(domain) {
         if (s.value == "")
             redirect = "https://faradars.org";
         else
-            redirect = "https://faradars.org/search_gcse?q=";
+            redirect = "https://faradars.org/search?q=";
     } else if (domain == "google") {
         if (s.value == "")
             redirect = "https://www.google.com";
@@ -74,15 +74,15 @@ function Search(domain) {
     }
     var win = window.open(redirect + s.value, '_blanck');
     s.focus();
-    s.value = "";
+//     s.value = "";
     win.focus();
 }
 
 function url() {
     if (s.value != "") {
-        var win = window.open("http://www." + s.value, '_blanck');
+        var win = window.open("http://" + s.value, '_blanck');
         s.focus();
-        s.value = "";
+//         s.value = "";
         win.focus();
     } else {
         s.value = "Please enter a URL";
